@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.4em;
+}
+
+@media screen and (min-width: 320px) {
+
+    .what{
+    position: fixed;
+    font-size: 3.2em;
+    margin-left: 85%;
+    margin-top: 127%;
+    z-index: 30;
+    color: #25D366;
+    }
+
+    .card-img{
+    width: 100%;
+    }
+
+    /* HERO */
+
+    .hero{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .video{
+        width: 100%;
+        position: relative;
+        z-index: -1;
+    } 
+    
+    .div-hero{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        gap: .2em;
+    }
+
+    h1{
+        font-family: 'Josefin Sans', sans-serif;
+        color: #fff;
+        font-size: 2em;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: .3em;
+    }
+
+    .hero-par{
+        font-family: 'Josefin Sans', sans-serif;
+        color: #fff; 
+        letter-spacing: .2em;
+        font-weight: 600;
+    }
+
+    .pres-form{
+        margin: 0 auto;
+    }
+
+    .btn{
+        background-color: burlywood;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: .9em;
+        font-weight: 700;
+        padding: .3em 1.2em;
+        border: none;
+        margin-top: .7em;
+    }
+
+    /* SECCIÓN TIPOS */
+
+    .tipos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1em 0;
+        gap: 2em;
+    }
+
+    h2{
+        font-family: 'Great Vibes', cursive;
+        font-weight: 500;
+    }
+
+    .tipos-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: .7em;
+        margin-bottom: 2.3em;
+    }
+
+    .tipos-img{
+        width: 18em;
+        height: 30em;
+    }
+
+    .tipos-tit{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .parrafo{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+        text-align: center;
+    }
+
+
+    /* SECCIÓN ENTREGAS */
+
+    .entregas{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2em;
+        margin-bottom: 2.5em;
+    }
+
+    .entregas-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1em 4em;
+        gap: 1em;
+    }
+
+    .club{
+        gap: 0;
+    }
+
+    .entregas-tit{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2em;
+        font-weight: 900;
+        letter-spacing: .3em;
+    }
+
+    .entregas-par{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.2em;
+        color: tomato;
+    }
+
+    .par{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    /* SECCIÓN BUSCAMOS */
+
+    .buscamos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2em;
+        padding: 1em 2em;
+        margin-bottom: 3em;
+    }
+
+    .buscamos-tit{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2em;
+        font-weight: 800;
+        text-align: justify;
+    }
+
+    .parrafo{
+        font-size: 1em;
+        font-weight: 600;
+        text-align: justify;
+    }
+
+    /* SECCIÓN RESÚMEN */
+
+    .resumen{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4em;
+        padding: 1em 1.5em;
+    }
+
+    .resumen-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 3.5em;
+    }
+
+    .fa-solid{
+        font-size: 2.2em;
+        color: tomato;
+    }
+
+    .res-tit{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
+    .parrafo{
+        font-size: .9em;
+    }
+
+    /* SECCIÓN REGALAR */
+
+    .regalar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .regalar-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1em 2em;
+    }
+
+    .reg-tit{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
+    /* FOOTER */
+
+    .fin{
+        width: 100%;
+        height: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+        padding: .6em 0;
+        margin-top: 3em;
+        gap: .2em;
+    }
+
+    .foot{
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .fa{
+        color: #fff;
+        font-size: 1.9em;
+    }
+
+    .fin-par{
+        color: #fff;
+        font-weight: 500;
+        word-spacing: .8em;
+    }
+
+}
+
+/* MEDIA QUERIES */
+
+@media  screen and (min-width: 480px) and (orientation: landscape) {
+    h2{
+        font-size: 2em;
+    }
+
+    .tipo-img{
+        width: 26em;
+        height: 40em;
+    }
+
+    .buscamos-tit{
+        font-size: 2.5em;
+    }
+
+    .what{
+        margin-left: 89%;
+        margin-top: 84%;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .div-hero{
+        width: 30em
+    }
+
+    h1{
+        font-size: 5em;
+    }
+
+    .hero-par{
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .what{
+        display: none;
+    }
+
+    .hero, h2{
+        margin-bottom: 3em;
+    }
+
+    .tipos-cont, .resumen-cont{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tipos{
+        margin-bottom: 12em;
+    }
+
+    .tipos-card{
+        width: 50%;
+    }
+
+    .club h2{
+        line-height: 0;
+        margin-bottom: .5em;
+    }
+
+    .entregas-div{
+        padding: 0 15em;
+    }
+
+    .entregas{
+        margin-bottom: 15em;
+    }
+
+    .buscamos{
+        padding: 0 7em;
+        margin-bottom: 7em;
+    }
+
+    .buscamos-tit{
+        margin-top: 1.5em;
+        margin-bottom: .5em;
+    }
+
+    .buscamos-par{
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .resumen-cont{
+        gap: 2em;
+        margin-bottom: 7em;
+    }
+
+    .resumen-card{
+        width: 40%;
+    }
+
+    .res-tit{
+        margin-bottom: .5em;
+    }
+
+    .fin{
+        margin-top: 10em;
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1{
+        font-size: 6em;
+    }
+
+    h2{
+        font-size: 4em;
+        margin-top: 2em;
+    }
+    .fin{
+        height: 150px;
+    }
+}
+
