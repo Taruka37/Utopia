@@ -9,8 +9,20 @@
     <title>SUSCRIBÍTE</title>
 </head>
 <body>
+    <header class="container">
+        <div class="logo">
+            <h2 class="logo-h">UTOPÍA</h2>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+   <section class="comprar">
     <form name="formulario" method="get" action="procesar.php">
-        <fieldset>
+       <div class="eco">
+        <fieldset class="campo">
             <legend>Detalles de Envío</legend>
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre">
@@ -29,7 +41,7 @@
             <label for="email">Correo Electrónico</label>
             <input type="email" name="email" id="email">
         </fieldset>
-        <fieldset>
+        <fieldset class="campo">
             <legend>Información de Pago</legend>
             <label for="tarjeta">Número de la tarjeta de crédito/débito</label>
             <input type="number" name="tarjeta" id="tarjeta" minlength="13" maxlength="18">
@@ -38,9 +50,20 @@
             <label for="fecha">Fecha de vencimiento</label>
             <input type="date" name="fecha" id="fecha">
             <label for="codigo">Código de seguridad</label>
-            <input type="password" name="codigo" id="codigo">
-            <button type="submit">Completar Compra</button>
+            <input type="password" name="codigo" id="codigo" maxlength="3">
+            <button class="btn" type="submit">Completar Compra</button>
         </fieldset>
+       </div>
     </form>
+   </section>
+   <footer class="fin">
+    <div class="foot">
+        <a href="#"><i class="fa-brands fa fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa fa-whatsapp"></i></a>
+    </div>
+    <p class="fin-par parrafo">&copy; Copyright 2023 - Fabiana Olarte</p>
+</footer>
 </body>
 </html>

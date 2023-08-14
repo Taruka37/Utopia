@@ -25,6 +25,62 @@
     width: 100%;
     }
 
+    .cont{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* HEADER */
+
+    .container{
+        width: 100%;
+        display: flex;
+        background-color: #000;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5em;
+        height: 4em;
+        padding: 1em 10%;
+    }
+    
+    .logo h2{
+        font-size: 1.2em;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .logo-h{
+        font-family: 'Josefin Sans', sans-serif;
+        color: #fff;
+        letter-spacing: .3em;
+        /* margin-top: 3em; */
+    }
+    
+    .logo a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .nav-links{
+        list-style: none;
+    }
+    
+    .nav-links li{
+        display: inline-block;
+        padding: 0 1em;
+    }
+    
+    .nav-links li a{
+        font-family: 'Josefin Sans', sans-serif;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+
     /* HERO */
 
     .hero{
@@ -85,11 +141,6 @@
     /* SECCIÓN TIPOS */
 
     .tipos{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         padding: 1em 0;
         gap: 2em;
     }
@@ -131,11 +182,6 @@
     /* SECCIÓN ENTREGAS */
 
     .entregas{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         gap: 2em;
         margin-bottom: 2.5em;
     }
@@ -193,11 +239,6 @@
     /* SECCIÓN BUSCAMOS */
 
     .buscamos{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         gap: 2em;
         padding: 1em 2em;
         margin-bottom: 3em;
@@ -219,11 +260,6 @@
     /* SECCIÓN RESÚMEN */
 
     .resumen{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         gap: 4em;
         padding: 1em 1.5em;
     }
@@ -254,14 +290,6 @@
     }
 
     /* SECCIÓN REGALAR */
-
-    .regalar{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
 
     .regalar-card{
         width: 100%;
@@ -322,7 +350,7 @@
         overflow: hidden;
     }
 
-    /* HTML SUSCRIP */
+    /* HTML SUSCRIP Y REGALO */
 
     .container-sec{
         width: 100%;
@@ -362,7 +390,60 @@
         font-weight: 700;
         color: #ff6347;
     }
+   
+    /* HTML COMPRA */
 
+    .eco{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em 0;
+        gap: 2em;
+    }
+
+    .campo{
+        width: 90%;
+        /* margin-left: 1em;
+        margin-top: 2em; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 1px,rgba(0,0,0,0.1) 1px, rgba(0,0,0,0.1) 10px,transparent 10px, transparent 11px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 9px,rgb(255,255,255) 9px, rgb(255,255,255) 18px,rgb(255,255,255) 18px, rgb(255,255,255) 20px,rgb(255,255,255) 20px, rgb(255,255,255) 26px); background-size: 53px 53px;
+        border: 2px solid #000;
+        border-radius: 1em;
+        gap: .3em;
+    }
+    label, legend{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    legend{
+        font-size: 1.2em;
+    }
+
+    #direccion, #tarjeta{
+        width: 100%;
+    }
+
+    #cp, #codigo{
+        width: 30%;
+    }
+
+    #titular, #nombre, #apellido, #email{
+        width: 85%;
+    }
+
+    input{
+        font: 1em 'Josefin Sans', sans-serif;
+        height: 1.7em;
+        border: 1px solid #000;
+        border-radius: .3em;
+        font-weight: 600;
+    }
 }
 
 /* MEDIA QUERIES */
@@ -411,11 +492,31 @@
     .container-sec{
         padding: 1em 5em;
     }
+
+    .campo{
+        width: 70%;
+    }
+
+    #titular, #nombre, #apellido, #email{
+        width: 65%;
+    }
+
+    #direccion, #tarjeta{
+        width: 90%;
+    }
+
+    #cp, #codigo{
+        width: 20%;
+    }
 }
 
 @media screen and (min-width: 1024px){
     .what{
         display: none;
+    }
+
+    .logo h2{
+        margin-top: 3em;
     }
 
     .hero, h2{
@@ -495,6 +596,23 @@
     .container-sec{
         gap: 2.5em;
     }
+
+    .eco{
+        gap: 5em;
+        padding: 3em 0;
+    }
+
+    #titular, #nombre, #apellido, #email, #tarjeta{
+        width: 45%;
+    }
+
+    #direccion{
+        width: 70%;
+    }
+
+    #cp, #codigo{
+        width: 15%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -518,11 +636,24 @@
 
     .fin{
         height: 150px;
+        margin-top: 0;
     }
 
     .star{
         font-size: 50px;
         line-height: .5em;
+    }
+
+    .eco{
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: .7em;
+        background-color: rgb(212, 236, 236);
+    }
+
+    .campo{
+        width: 45%;
+        
     }
 }
 
